@@ -9,7 +9,7 @@ section {
 }
 
 #render {
-    width: 30%;
+    width: 50%;
     height: 70%;
     background-color: grey;
     border-radius: 20px;
@@ -50,9 +50,72 @@ section {
 }
 
 h3 {
-    font-size: 45px;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
 }
 
 img {
+    width: 50%;
+    height: 50%;
     border-radius: 10px;
+}
+
+
+@media (max-width:630px) {
+    #render {
+       width: 50%;
+    }
+    .card p {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:476px) {
+    #render {
+       width: 55%;
+    }
+    .card p {
+        font-size: 11px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:398px) {
+    #render {
+       width: 60%;
+    }
+    .card p {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width:332px) {
+    #render {
+       width: 70%;
+    }
+    .card p {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:285px) {
+    #render {
+       width: 75%;
+    }
+    .card p {
+        font-size: 9px;
+    }
+    h3 {
+        font-size: 20px;
+    }
 }

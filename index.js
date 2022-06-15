@@ -32,7 +32,7 @@ function mostrarInfo(nombre, precio, img, ingredientes) {
 
     render.innerHTML = `<div class="card">
      <h2>${nombre}</h2>
-     <h4>${precio}$</h4>
+     <h4>$ ${precio}</h4>
      <img src="./Img/${img}" alt=" ${nombre}">   
      <p>Ingredientes: ${ingredientes}</p>
      </div>
