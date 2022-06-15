@@ -10,13 +10,14 @@ section {
 
 #render {
     width: 50%;
-    height: 70%;
+    height: 80%;
     background-color: grey;
     border-radius: 20px;
     box-shadow: 1px 1px 3px 2px;
 }
 
 .boton {
+    margin-top: 10px;
     width: 150px;
     height: 30px;
     border-radius: 10px;
@@ -40,12 +41,11 @@ section {
 
 .card {
     margin: 5px;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
 
 }
 
@@ -57,10 +57,19 @@ h3 {
 
 img {
     width: 50%;
-    height: 50%;
+    height: 40%;
     border-radius: 10px;
 }
 
+.container-buscar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 @media (max-width:630px) {
     #render {
@@ -119,3 +128,30 @@ img {
         font-size: 20px;
     }
 }
+
+@media (max-height:410px) {
+    #render {
+       width: 60%;
+       height: 100%;
+    }
+    .card p {
+        font-size: 9px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    .container-buscar {
+        display: flex;
+        width: 30%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
