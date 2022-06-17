@@ -29,7 +29,7 @@ const render = document.getElementById("render")
 
 
 function mostrarInfo(nombre, precio, img, ingredientes) {
-
+    idPizza.value = ""
     render.innerHTML = `<div class="card">
      <h2>${nombre}</h2>
      <h4>$ ${precio}</h4>
@@ -37,17 +37,19 @@ function mostrarInfo(nombre, precio, img, ingredientes) {
      <p>Ingredientes: ${ingredientes}</p>
      </div>
     `;
+    
 }
 
 btn.addEventListener("click", () => {
     render.innerHTML = ""
-   
+    
     pizzas.forEach(p => {
 
         (p.id == idPizza.value) ? mostrarInfo(p.nombre, p.precio, p.img, p.ingredientes) : null;
 
     })
     if (render.innerHTML == "") {
+        idPizza.value = ""
         render.innerHTML = `<div class="card">
         <h3>No existe esa Pizza</h3> 
         </div>      
